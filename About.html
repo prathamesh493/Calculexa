@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="About.css"/>
+        <script src="About.js" defer></script>
+    </head>
+    <body>
+    <br>
+<nav class="navbar">
+    <div class="logo"><li><a href="Calculexa.html" id="Logo"><img src="Logo.png" width="267px" height="140px"/></a></li></div>
+    <ul class="nav-links">
+        
+        <div class="container menu">
+        <li><a  href="Calculexa.html">HOME</a></li>
+        <li class="services"><a href="#">Calculation</a>
+            <ul id="dp" class="dropdown">
+                <li><a href="Decimal.html">Decimal</a></li>
+                <li><a href="Binary.html">Binary</a></li>
+            </ul>
+        </li>
+        <li><a href="textobin.html">TextToBinary</a></li>
+        <li><a href="Conversion.html">Conversion</a></li>
+
+        <li><a id="cal" href="About.html">Help</a></li>
+        </div>
+    </ul>
+</nav>    
+</body>
+
+
+
+<body>
+<br>
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php" name="f1">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your Name....">
+
+    <label for="cn">Contact No.</label>
+    <input type="text" id="cn" name="contactno" placeholder="XXXXXXXXXX">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="select">Select</option>
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="brazil">Brazil</option>
+      <option value="ukraine">Ukraine</option>
+      
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Submit a Feedback..." style="height:150px"></textarea>
+    <input type="button" value="Submit" id="btnsubmit" onclick="fun()">
+</form>
+</div>
+
+</body>
+</html>

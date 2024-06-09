@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="stylescal.css"/>
+        <script src="bincal.js"></script>
+    </head>
+    <body>
+    <br>
+<nav class="navbar">
+    <div class="logo"><li><a href="Calculexa.html" id="Logo"><img src="Logo.png" width="280px" height="150px"/></a></li></div>
+    <ul class="nav-links">
+        
+        <div class="container menu">
+        <li><a href="Calculexa.html">HOME</a></li>
+        <li id="cal" class="services"><a href="#">Calculation</a>
+            <ul id="dp" class="dropdown">
+                <li><a href="Decimal.html">Decimal</a></li>
+                <li><a id="cal" href="Binary.html">Binary</a></li>
+            </ul>
+        </li>
+        <li><a href="textobin.html">TextToBinary</a></li>
+        <li><a href="Conversion.html">Conversion</a></li>
+
+        <li><a href="About.html">Help</a></li>
+        </div>
+    </ul>
+</nav>    
+
+
+  
+    <body>
+
+      <div class="split left">
+        <div class="centered">
+          <div class="container">
+            <div class="jumbotron">
+                <h1>Binary Calculator</h1>
+                <br>
+                <div id="output"></div>
+                <div class="container mt-2">
+                  <br>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" 
+                                    class="btn btn-light" 
+                                    onclick="input('0')">
+                                      0</button>
+                            <button type="button" 
+                                    class="btn btn-light" 
+                                    onclick="input('1')">
+                                      1</button>
+                            <button type="button" 
+                                    class="btn btn-danger float-right ml-2" 
+                                    onclick="cls()">
+                                      AC</button>
+                            <button type="button" 
+                                    class="btn btn-warning float-right" 
+                                    onclick="backspace()">
+                                      Backspace</button>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <button type="button" 
+                                    class="btn btn-info" 
+                                    onclick="input('+')">+</button>
+                            <button type="button"
+                                    class="btn btn-info" 
+                                    onclick="input('-')">-</button>
+                            <button type="button" 
+                                    class="btn btn-info" 
+                                    onclick="input('*')">*</button>
+                            <button type="button" 
+                                    class="btn btn-info" 
+                                    onclick="input('/')">/</button>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <button type="button" 
+                                    class="btn btn-success" 
+                                    onclick="calculate()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="centered">
+            <p id="header">Calculation using Binary Number System<br></p>
+            <video width="520" height="330" controls>
+                <source src="VideoBin1.mp4" type="video/mp4">
+            </video>
+            <h4>&emsp;Source : The Organic Chemistry Tutor (YouTube)</h4>
+            
+        </div>
+      </div>
+      
+        
+    </body>
+</html>
